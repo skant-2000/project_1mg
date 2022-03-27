@@ -1,0 +1,78 @@
+.forBg {
+	background: #fffcf8;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.footerMainMain {
+	display: flex;
+	padding-bottom: 30px;
+	width: 90%;
+	margin: auto;
+	justify-content: space-between;
+	gap: 100px;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.footerFlex {
+	display: flex;
+	gap: 10px;
+	width: 80%;
+	margin: auto;
+
+	justify-content: space-between;
+	padding-top: 50px;
+}
+
+.knowUs {
+	padding-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+.list > div {
+	font-size: 14px;
+	padding-bottom: 10px;
+	color: rgb(77, 74, 74);
+}
+.socialLink {
+	font-size: 14px;
+	padding-bottom: 10px;
+	color: rgb(77, 74, 74);
+}
+.logoMain {
+	display: flex;
+	gap: 4%;
+	margin-bottom: 5px;
+}
+.footerLogo {
+	height: 26px;
+	width: 26px;
+}
+
+.signUpFooter {
+	width: 97px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: #ff6f61;
+	font-weight: 700;
+	border: none;
+	vertical-align: middle;
+	color: #fff;
+}
+
+.downloadAppMain {
+	margin-top: 30px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.footergoogleLink {
+	height: 40px;
+	width: 130px;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+
+.footerappleLink {
+	height: 40px;
+	width: 130px;
+}

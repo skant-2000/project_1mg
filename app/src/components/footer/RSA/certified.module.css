@@ -1,0 +1,24 @@
+.certifiedRoot {
+	background: #fffcf8;
+    padding-bottom: 20px;
+}
+
+.certifiedMain {
+	border-bottom: 1px solid #eaeaea;
+}
+
+.certifiedImgRooot {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.certifiedImg {
+    height: 70px;
+    width: 70px;
+}
+
+.certifiedISOPara {
+    font-weight: 600;
+    text-align: center;
+}
