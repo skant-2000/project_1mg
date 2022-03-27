@@ -1,0 +1,39 @@
+.knowMoreRoot {
+	background: #fffcf8;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.knowMoreMain {
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	margin: auto;
+	align-items: center;
+}
+
+.knowMoreText {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.openRoot {
+	background: #fffcf8;
+	padding-top: 20px;
+}
+.openMain {
+    width: 95%;
+    margin: auto;
+}
+
+.accessText {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.tataPara {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(128, 125, 125);
+    padding-bottom: 20px;
+}

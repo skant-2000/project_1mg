@@ -1,0 +1,33 @@
+.rsaMainRoot {
+	background: #fffcf8;
+    padding-bottom: 20px;
+}
+.rsaMain {
+    display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: auto;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 20px;
+
+}
+
+.reliableMain {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.reliableText {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+.reliablePara {
+    color: rgb(170, 170, 170);
+    font-size: 14px;
+    line-height: 20px;
+}
