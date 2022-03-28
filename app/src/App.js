@@ -1,12 +1,10 @@
 import './App.css';
-import HealthChcekupCarousel from './component/landingPage/HealthChcekupCarousel';
-import SaleCarousel from './component/landingPage/SaleCarousel';
+import LandingPage from './page/LandingPage';
 
 function App() {
   return (
     <div className="App">
-      <SaleCarousel />
-      <HealthChcekupCarousel />
+      <LandingPage />
     </div>
   );
 }

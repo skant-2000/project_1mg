@@ -48,3 +48,9 @@
         height: 60%;
     }
 }
+
+@media (max-width: 650px) {
+    .para {
+        height: 70px;
+    }
+}

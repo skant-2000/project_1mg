@@ -1,0 +1,110 @@
+.Products {
+    padding-top: 30px;
+}
+
+.Products > div:nth-child(1) {
+    width: 90%;
+    padding: 10px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.Products > div:nth-child(1) > p {
+    left: 0;
+    margin: 0;
+}
+
+.Products > div:nth-child(1) > button {
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: rgb(255, 111, 97);
+    border: 0;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.carousel  {
+    width: 99.8%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-bottom: 25px;
+    margin-top: 15px;
+}
+
+.divs {
+    margin: 15px 0;
+    width: 85%;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(223, 223, 223);
+    text-align: left;
+    height: 330px;
+}
+
+.divs:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+}
+
+.divs > div:nth-child(1) {
+    height: 150px;
+    text-align: center;
+}
+
+.divs > div:nth-child(1) > img {
+    height: 100%;
+}
+
+.divs > p {
+    margin: 0;
+    margin-top: 7px;
+}
+
+.divs > p:nth-child(2) {
+    font-size: 13px;
+}
+
+.divs > p:nth-child(3) {
+    font-size: 12px;
+    color: grey;
+}
+
+.divs > p:nth-child(4) {
+    font-size: 12px;
+}
+
+.divs > div:nth-child(5) {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.divs > div:nth-child(5) > div:nth-child(1) {
+    background-color: rgb(26, 170, 42);
+    color: white;
+    padding: 1px 4px;
+    border-radius: 2px;
+}
+
+.divs > div:nth-child(5) > div:nth-child(2) {
+    margin-left: 5px;
+}
+
+.divs > p:nth-child(6) {
+    font-size: 12px;
+}
+
+span {
+    color: rgb(26, 170, 42);
+}
+
+.divs > p:nth-child(7) {
+    font-size: 15px;
+    font-weight: 500;
+}

@@ -9,6 +9,7 @@ const checkupsSchema = new mongoose.Schema({
     discount: Number,
 })
 
+
 const checkupsModel = mongoose.model("checkups", checkupsSchema)
 
-module.exports = checkupsModel;
+module.exports =  checkupsModel;

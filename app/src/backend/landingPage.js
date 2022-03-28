@@ -11,10 +11,18 @@ const connect = () => {
     return mongoose.connect(DB_URL)
 }
 
-const checkupsModel = require("./landingPage.schema")
+const checkupsModel = require("./checkups.schema")
 
 app.get("/checkups", async(req, res) => {
     let data = await checkupsModel.find({})
+    res.status(200)
+    res.json(data)
+})
+
+const productsModel = require("./products.schema")
+
+app.get("/products", async(req, res) => {
+    let data = await productsModel.find({})
     res.status(200)
     res.json(data)
 })

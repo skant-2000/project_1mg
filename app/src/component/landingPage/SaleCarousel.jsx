@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import style from "../../style/SaleCarousel.module.css";
-import { images } from "./Imagesurl";
+import { images } from "./SaleCarouselImage";
 
 export default function SaleCarousel() {
   const [imgaeChange, setImageChange] = useState(0);
