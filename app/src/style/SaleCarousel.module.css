@@ -25,6 +25,13 @@
     height: 100%;
 }
 
+.para {
+    height: 50px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    font-size: 21px;
+    color: rgb(88, 88, 88);
+}
+
 @media (max-width: 1000px) {
     .saleCarousel {
         flex-direction: column;
