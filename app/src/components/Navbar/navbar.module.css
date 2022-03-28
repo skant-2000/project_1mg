@@ -1,0 +1,132 @@
+.forBoxShadow {
+	box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+		rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+	background: #fff;
+}
+.navbar1Root {
+	display: flex;
+	align-items: center;
+	width: 97%;
+	margin: auto;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.navbar1Root > div > button {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.mgimg {
+	width: 124px;
+	height: 35px;
+}
+
+.medicine {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.medicine:hover,
+.labtests:hover,
+.askDoctor:hover {
+	color: #ff6f61;
+}
+.labTestFlex {
+	display: flex;
+	align-items: center;
+}
+.labtests,
+.askDoctor {
+	font-weight: 600;
+	font-size: 16px;
+}
+.navbar2RootMain {
+	box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+		rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+	background: #fff;
+}
+.navbar2Root {
+	display: flex;
+	align-items: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 97%;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.locationLogo {
+	background: #f1f4f6;
+	color: #3e3e3e;
+	height: 21px;
+	padding: 5px 0px 5px 3px;
+}
+
+.cityInput {
+	width: 150px;
+	font-size: 14px;
+	background: #f1f4f6;
+	margin-right: 2px;
+	height: 21px;
+	padding: 6px 30px 7px 0;
+	border: none;
+	outline: 0;
+	color: #3e3e3e;
+	text-indent: 12px;
+}
+.searchInput {
+	width: 590px;
+	font-size: 14px;
+	background: #f1f4f6;
+	line-height: 21px;
+	padding: 6px 30px 7px 0;
+	border: none;
+	outline: 0;
+	color: #3e3e3e;
+	text-indent: 12px;
+}
+
+.upload {
+	border-radius: 4px;
+	background-color: #ff6f61;
+	padding: 8px 40px;
+	font-size: 1rem;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+	color: white;
+	cursor: pointer;
+}
+
+.quickBuy {
+	text-align: right;
+	font-size: 14px;
+	color: #212121;
+	opacity: 0.87;
+	line-height: 20px;
+}
+
+.navbar3Root {
+	background: #fff;
+	width: 95%;
+	margin: auto;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	display: flex;
+	justify-content: center;
+	gap: 2%;
+}
+
+.arrowAndText {
+	display: flex;
+	align-items: center;
+}
+.healthText {
+	color: #212121;
+	font-size: 14px;
+}
+.healthText:hover {
+	color: #ff6f61;
+}

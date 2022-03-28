@@ -1,0 +1,27 @@
+.forShadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background: #fff;
+}
+.stayHealthyText {
+	color: #1a1a1a;
+	font-size: 1.15rem;
+	font-weight: 600;
+}
+
+.bringCareText {
+	color: #1a1a1a;
+	font-size: 1rem;
+}
+
+.tataPara {
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(95, 93, 93);
+}
+.footerParaRoot {
+    padding-top: 20px;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 20px;
+
+}
