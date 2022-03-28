@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    padding: 4px 0px;
+    cursor: pointer;
+}
+
+.name {
+    margin-left: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.check {
+    border: none;
+    outline: none;
+}
+
+.check:checked {
+    color: burlywood;
+    background-color: red;
+}
+
+input[type="checkbox"] {
+    color: black;
+    border: 4px solid black;
+}
