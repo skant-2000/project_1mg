@@ -1,0 +1,61 @@
+.AddressNavbarRoot {
+	background: white;
+
+}
+.AddressNavbarMain {
+	box-sizing: border-box;
+	background: white;
+	display: flex;
+	width: 95%;
+	margin: auto;
+	align-items: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid #f1f4f6;
+}
+
+.threeFlex {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	flex: 2;
+	align-items: center;
+}
+.threeFlexSmall {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	align-items: center;
+}
+.imgContainer {
+	margin-right: 40px;
+}
+
+.imgTATA {
+	width: 100px;
+}
+
+.Num {
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	background: #ff6f61;
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+.Num3 {
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	background: #f59a92;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}

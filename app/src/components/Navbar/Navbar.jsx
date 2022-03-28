@@ -8,7 +8,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 export const Navbar = () => {
 	return (
-		<div>
+		<div style={{backgroundColor: "white"}}>
 			<section>
 				<div className={styles.forBoxShadow}>
 					<div className={styles.navbar1Root}>

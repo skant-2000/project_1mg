@@ -1,0 +1,196 @@
+.navbar {
+	padding-bottom: 30px;
+}
+.addressListMain {
+	background: #fff;
+	margin-left: 90px;
+	border-bottom: 1px solid #c7c7c7;
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+#bosy {
+	background-color: #f4f4f4;
+	width: 100%;
+	height: 100%;
+}
+.forradioandlist {
+	display: flex;
+	gap: 10px;
+}
+
+input[type="radio"] {
+	height: 15px;
+	width: 15px;
+	accent-color: rgb(228, 112, 112);
+}
+
+.addtype {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #212121;
+	padding-bottom: 5px;
+}
+
+.name {
+	font-size: 12px;
+	color: #212121;
+	padding-bottom: 5px;
+}
+
+.addNewAddBtn {
+	margin-top: 20px;
+	width: 47.5%;
+	margin-left: 90px;
+	border: 1px solid #ff6f61;
+	border-radius: 2px;
+	background-color: transparent;
+	text-align: center;
+	padding: 8px;
+	margin-bottom: 16px;
+	color: #ff6f61;
+	cursor: pointer;
+	display: table;
+	height: 40px;
+}
+
+
+.addContBtn {
+	margin-top: 20px;
+	width: 47.5%;
+	margin-left: 90px;
+	border: 0;
+	border-radius: 4px;
+	background-color: #ff6f61;
+	text-align: center;
+	padding: 8px;
+	margin-bottom: 16px;
+	color: #fff;
+	cursor: pointer;
+	display: table;
+	height: 40px;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.textAndLineMain {
+	box-sizing: border-box;
+	display: grid;
+	width: 47%;
+	grid-template-columns: 50% 40%;
+	margin-left: 90px;
+	margin-top: 30px;
+	gap: 10%;
+	font-size: 10px;
+	color: #757575;
+	margin-top: 10px;
+	line-height: 16px;
+}
+
+.line {
+	margin-top: 40px;
+	padding-top: 10px;
+	border-top: 1px solid #d4c6c6;
+}
+
+input[name="addtype"] {
+    height: 15px;
+    width: 15px;
+	accent-color: rgb(231, 84, 84);
+}
+
+.radiobtn {
+	height: 15px;
+    width: 15px;
+	border: 1px solid #ff6f61;
+	border-radius: 50%;
+	background: transparent;
+	display: flex;
+	align-items: center;
+}
+
+
+.radiobtn:focus {
+	height: 15px;
+    width: 15px;
+	border: 1px solid #ff6f61;
+	border-radius: 50%;
+	background: #ff6f61;
+}
+
+.myAcnt {
+  color: rgba(0, 0, 0, 0.767);
+  padding-left: 10px;
+}
+
+.myAcntBtn {
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.dropdownContent {
+  visibility: hidden;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 12px 16px;
+  /* z-index: 1; */
+  height: 40px;
+  margin-top: -90px;
+  margin-left: 47%;
+  border-radius: 2px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  background: #fff;
+}
+
+.loProfile {
+  background-color: transparent;
+  border: 0;
+  font-size: 12px;
+  color: #666666;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.loLogOut {
+  background-color: transparent;
+  border: 0;
+  font-size: 12px;
+  color: #666666;
+  cursor: pointer;
+}
+
+.loProfile:hover {
+	color: #ff6f61;
+}
+.loLogOut:hover {
+	color: #ff6f61;
+}
+
+.ss {
+  border: 1px solid #ff645a;
+  /* text-align: center; */
+  align-items: center;
+  display: flex;
+  padding: 7px;
+  border-radius: 50%;
+  color: #ff645a;
+  background-color: rgba(255, 88, 84, 0.12);
+}
+@media only screen and (max-width: 820px) {
+}
+@media only screen and (max-width: 380px) {
+}

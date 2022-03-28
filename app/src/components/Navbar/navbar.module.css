@@ -1,6 +1,7 @@
 .forBoxShadow {
 	box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
 		rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+	background: #fff;
 }
 .navbar1Root {
 	display: flex;
@@ -44,6 +45,7 @@
 .navbar2RootMain {
 	box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
 		rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+	background: #fff;
 }
 .navbar2Root {
 	display: flex;
@@ -107,13 +109,14 @@
 }
 
 .navbar3Root {
-    width: 95%;
-    margin: auto;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    display: flex;
-    justify-content: center;
-    gap: 2%;
+	background: #fff;
+	width: 95%;
+	margin: auto;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	display: flex;
+	justify-content: center;
+	gap: 2%;
 }
 
 .arrowAndText {
@@ -127,4 +130,3 @@
 .healthText:hover {
 	color: #ff6f61;
 }
-
