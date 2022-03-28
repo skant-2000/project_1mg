@@ -1,0 +1,67 @@
+.container {
+    width: 226px;
+    height: 338px;
+    font-family:  Helvetica, Arial, sans-serif;
+    line-height: 24px;
+    cursor: pointer;
+    background-color: white;
+    margin: 5px 10px 15px 10px;
+    padding: 12px;
+}
+
+.imageContainer {
+    text-align: center;
+}
+
+.image {
+    height: 165px;
+}
+
+.name {
+    padding-top: 28px;
+    color: rgb(34, 33, 33);
+    font-size: 14px;
+    display: inline;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;  /* Important for long words! */
+}
+
+.quantity {
+    font-size: 12px;
+    color: rgb(136, 133, 133);
+    padding-bottom: 20px;
+}
+
+
+
+.price {
+    font-size: 12px;
+    color: rgb(136, 133, 133);
+}
+
+.mrp {
+    text-decoration: line-through;
+}
+
+.discount {
+    color: #22b834;
+}
+
+.sp {
+    letter-spacing: 1px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff6f61;
+}

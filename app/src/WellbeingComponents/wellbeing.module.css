@@ -1,0 +1,15 @@
+.container {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 190px;
+    padding: 15px;
+}
+
+.itemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
