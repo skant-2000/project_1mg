@@ -1,10 +1,9 @@
 import React, {useState, useRef, useEffect} from 'react';
 import styles from './checkbox.module.css';
 
-export const Checkbox = ({name}) => {
+export const Checkbox = ({name, onClick}) => {
 
     const initState = localStorage.getItem(name) ? true : false;
-    console.log("Initial State : ", initState);
     const [state, setState] = useState(initState);
 
     const ref = useRef(false)
@@ -15,12 +14,25 @@ export const Checkbox = ({name}) => {
 
     const setChecked = () => {
         setState(ref.current.checked);
+        setTimeout(() => {
+            onClick();
+
+        }, 10);
     }
 
-    if(state === true)
+    if(state === true) {
         localStorage.setItem(name, state);
-    else
+        let filter = JSON.parse( localStorage.getItem("filter") );
+        filter = new Set(filter);
+        filter = [...filter, name];
+        localStorage.setItem("filter", JSON.stringify(filter));
+    }
+    else{
         localStorage.removeItem(name);
+        let filter = JSON.parse( localStorage.getItem("filter") );
+        filter = filter.filter((item) => item !== name);
+        localStorage.setItem("filter", JSON.stringify(filter));
+    }
     
 
   return (

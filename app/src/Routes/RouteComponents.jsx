@@ -5,6 +5,7 @@ import { NewAddress } from "../components/address-page/NewAddress";
 import { Cart } from "../components/cart/Cart";
 import { LandingPageComponents } from "../components/landingPage/LandingPageComponents";
 import { Shipment } from "../components/Shipment/Shipment";
+import { Wellbeing } from "../WellbeingComponents/Wellbeing";
 
 export const RouteComponents = () => {
 	return (
@@ -22,6 +23,7 @@ export const RouteComponents = () => {
 				></Route>
 
 				<Route path="/cart/select-shipment" element={<Shipment />}></Route>
+				<Route path="/category/wellbeing-nutrition" element={<Wellbeing /> } />
 			</Routes>
 		</div>
 	);

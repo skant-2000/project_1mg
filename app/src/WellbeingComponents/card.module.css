@@ -1,3 +1,8 @@
+.container, .imageContainer, .image, .quantity, .name, .add, .bottom, .sp, .discount, .price, .mrp {
+    padding: 0px;
+    margin: 0px;
+}
+
 .container {
     width: 226px;
     height: 338px;
