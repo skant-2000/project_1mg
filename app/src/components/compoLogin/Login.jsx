@@ -5,7 +5,6 @@ import Modal from '@mui/material/Modal';
 import { style, styleBtn, leftBox, rightBox, textField, btn } from "./styles"
 import {LeftSlider} from './LeftSlider';
 import { AuthContext } from '../../contextAPI/AuthContext';
-
 import RightLoginBox from './RightLoginBox';
 import LoginOtpPage from "./LoginOtpPage";
 const Login = () => {

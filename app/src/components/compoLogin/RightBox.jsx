@@ -7,7 +7,6 @@ import { rightBox, textField, btn } from "./styles"
 import { alpha, styled } from '@mui/material/styles';
 import { AuthContext } from '../../contextAPI/AuthContext';
 
-
 const CssTextField = styled(TextField)({
     '& label.Mui-focused': {
       color: 'black',

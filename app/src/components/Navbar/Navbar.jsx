@@ -5,6 +5,8 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import SearchIcon from "@mui/icons-material/Search";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Login from "../compoLogin/Login";
+import Signup from "../compoLogin/signup";
 
 export const Navbar = () => {
 	return (
@@ -74,8 +76,10 @@ export const Navbar = () => {
 							</div>
 						</div>
 						<div>
-							<button>Login |</button>
-							<button>Sign Up</button>
+							{/* <button>Login |</button> */}
+							<Login />
+							<Signup />
+							{/* <button>Sign Up</button> */}
 						</div>
 						<div>
 							<button>Offers</button>
