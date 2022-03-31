@@ -2,7 +2,7 @@ import * as React from 'react'
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
-import { AuthContext } from '../Context/AuthContext';
+import { AuthContext } from '../../contextAPI/AuthContext';
 
 import { style, styleBtn, leftBox} from "./styles"
 import {LeftSlider} from './LeftSlider';
