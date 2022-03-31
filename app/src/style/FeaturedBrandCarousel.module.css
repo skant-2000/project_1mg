@@ -1,0 +1,69 @@
+.FeaturedBrandCarousel {
+    margin-top: 310px;
+}
+
+.FeaturedBrandCarousel > div:nth-child(1) {
+    width: 90%;
+    padding: 10px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.FeaturedBrandCarousel > div:nth-child(1) > p {
+    left: 0;
+    margin: 0;
+}
+
+.FeaturedBrandCarousel > div:nth-child(1) > button {
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: rgb(255, 111, 97);
+    border: 0;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.carousel  {
+    width: 99.8%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-bottom: 25px;
+    margin-top: 15px;
+}
+
+.divs {
+    margin: 15px 0;
+    width: 130px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.divs:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+}
+
+.divs > img {
+    width: 100%;
+}
+
+.divs > p {
+    font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+    .FeaturedBrandCarousel {
+        margin-top: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    .FeaturedBrandCarousel {
+        margin-top: 240px;
+    }
+}

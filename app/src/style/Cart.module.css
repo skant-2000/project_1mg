@@ -1,0 +1,64 @@
+.cart {
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 59% 39%;
+    gap: 2%;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.cart > div:nth-child(1) > div {
+    width: 97%;
+    text-align: left;
+    padding: 20px 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+.cart > div:nth-child(1) > p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.cart > div:nth-child(1) > div > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart > div:nth-child(1) > div > div > div:nth-child(1) {
+    width: 80%;
+    padding-right: 20%;
+}
+
+.cart > div:nth-child(1) > div > div > div:nth-child(1) > p {
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0%;
+}
+
+.cart > div:nth-child(1) > div > div > div:nth-child(2) {
+    width: 20%;
+}
+
+.cart > div:nth-child(1) > div > div > div:nth-child(2) > p {
+    margin: 0%;
+    text-align: right;
+}
+
+.cart > div:nth-child(1) > div > div > div:nth-child(2) > p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.cart > div:nth-child(1) > div > div > div:nth-child(2) > p:nth-child(2) {
+    font-size: 10px;
+    color: grey;
+    margin-top: 5px;
+}
+
+.cart > div:nth-child(1) > div > p {
+    margin: 5px 0 8px;
+    font-size: 11px;
+    color: grey;
+}

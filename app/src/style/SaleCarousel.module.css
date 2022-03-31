@@ -1,0 +1,56 @@
+.saleCarousel {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.saleCarousel > div:nth-child(1) {
+    width: 70%;
+    height: 100%;
+}
+
+.saleCarousel > div:nth-child(2) {
+    width: 30%;
+    height: 100%;
+}
+
+.saleCarousel > div:nth-child(1) > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.saleCarousel > div:nth-child(2) > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.para {
+    height: 50px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    font-size: 21px;
+    color: rgb(88, 88, 88);
+}
+
+@media (max-width: 1000px) {
+    .saleCarousel {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .saleCarousel > div:nth-child(1) {
+        width: 100%;
+        height: 40%;
+    }
+
+    .saleCarousel > div:nth-child(2) {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 650px) {
+    .para {
+        height: 70px;
+    }
+}
