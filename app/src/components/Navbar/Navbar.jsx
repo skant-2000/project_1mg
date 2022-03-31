@@ -8,9 +8,13 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Login from "../compoLogin/Login";
 import Signup from "../compoLogin/signup";
 import { AuthContext } from "../../contextAPI/AuthContext";
-
+import {useNavigate} from "react-router-dom"
 export const Navbar = () => {
-const {auth, setAuth} = useContext(AuthContext)
+	const { auth, setAuth } = useContext(AuthContext);
+	const navigate = useNavigate()
+	const handleNavToCart = () => {
+		navigate("/cart")
+	}
 console.log(auth);
 	return (
 		<div style={{backgroundColor: "white"}}>
@@ -88,7 +92,7 @@ console.log(auth);
 							<button>Offers</button>
 						</div>
 						<div>
-							<button>
+							<button onClick={handleNavToCart}>
 								<ShoppingCartOutlinedIcon />
 							</button>
 						</div>
