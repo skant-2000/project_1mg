@@ -171,7 +171,7 @@ export const Wellbeing = () => {
 
   useEffect(async () => {
     let data = await axios.get(
-      "http://localhost:8000/wellbeing_nutritions?form=Powder"
+      "http://localhost:8001/wellbeing_nutritions?form=Powder"
     );
 
     data = data.data;

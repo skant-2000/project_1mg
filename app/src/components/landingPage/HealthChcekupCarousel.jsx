@@ -32,6 +32,7 @@ export default function HealthChcekupCarousel() {
       {data ? (
         <div className={style.HealthChcekupCarousel}>
           <img
+            style={{width: "100%"}}
             src="https://onemg.gumlet.io/image/upload/v1638879520/ccdg5rr0hssuyw6nw27m.png"
             alt="img"
           />
