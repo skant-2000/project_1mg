@@ -27,6 +27,14 @@ app.get("/products", async(req, res) => {
     res.json(data)
 })
 
+const cartModel = require("./cart.schema")
+
+app.get("/cart", async(req, res) => {
+    let data = await cartModel.find({})
+    res.status(200)
+    res.json(data)
+})
+
 app.listen(PORT, async () => {
     try {
         await connect()

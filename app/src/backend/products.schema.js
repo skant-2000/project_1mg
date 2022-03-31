@@ -10,6 +10,6 @@ const productsSchema = new mongoose.Schema({
     sp: Number,
 })
 
-const productsModel = mongoose.model("wellbeing_nutrition", productsSchema)
+const productsModel = mongoose.model("wellbeing_nutritions", productsSchema)
 
 module.exports =  productsModel;
