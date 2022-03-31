@@ -12,7 +12,7 @@ const Login = () => {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen} style={{color: "black", fontSize: "13px"}}>Login</Button>
       {open && (<><Modal
         open={open}
         onClose={handleClose}
@@ -24,7 +24,7 @@ const Login = () => {
           <Box sx={leftBox}>
             <LeftSlider />
           </Box>
-         {!isLogin? <RightLoginBox />:<LoginOtpPage />}
+         {isLogin? <RightLoginBox />:<LoginOtpPage />}
         </Box>
       </Modal></>)}
     </div>

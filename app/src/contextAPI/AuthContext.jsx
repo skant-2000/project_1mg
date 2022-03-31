@@ -5,7 +5,7 @@ export const AuthContextProvider = ({children}) => {
   const [register, setRegister] = React.useState("")
   const [login, setLogin] = React.useState("")
   const [isRegiter, setIsRegister] = React.useState(false)
-  const [isLogin, setIsLogin] = React.useState(false)
+  const [isLogin, setIsLogin] = React.useState(true)
   const [signedUp, setSignedUp] = React.useState(false)
   const [signupOtp, setSignupOtp] = React.useState("")
   const [loginOtp, setLoginOtp] = React.useState("")
@@ -69,7 +69,7 @@ export const AuthContextProvider = ({children}) => {
    axios.post("http://localhost:8001/api/user/login/verify", data).then((res) => {
     console.log("res", res)
     alert("Otp verified successfully")
-    // setIsLogin(true)
+    setIsLogin(true)
     setLoginOtp("")
     setAuth(true)
     setOpen(false)
@@ -89,7 +89,7 @@ export const AuthContextProvider = ({children}) => {
     }
    axios.post("http://localhost:8001/api/user/login", data).then((res) => {
     console.log("res", res)
-    setIsLogin(true)
+    setIsLogin(false)
     console.log(res.data.otp)
     alert("otp:  "+ res.data.otp)
    })
@@ -99,7 +99,7 @@ export const AuthContextProvider = ({children}) => {
    }
 
   return (
-      <AuthContext.Provider value={{loginOtp,handleLogin, handleVerifyLoginOtp, setLoginOtp, register, setRegister, login, setLogin, isRegiter, setIsRegister, isLogin, setIsLogin, handleRegister, handleVerifyOtp, signupOtp, handleOpen2, setSignupOtp,handleOpen, handleClose, open,handleOpen1, handleClose1, open1}}>
+      <AuthContext.Provider value={{loginOtp,auth,handleLogin,setAuth, handleVerifyLoginOtp, setLoginOtp, register, setRegister, login, setLogin, isRegiter, setIsRegister, isLogin, setIsLogin, handleRegister, handleVerifyOtp, signupOtp, handleOpen2, setSignupOtp,handleOpen, handleClose, open,handleOpen1, handleClose1, open1}}>
           {children}
       </AuthContext.Provider>
   )

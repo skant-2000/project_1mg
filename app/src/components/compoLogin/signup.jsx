@@ -15,7 +15,7 @@ const { isRegiter, handleRegister, handleOpen1, handleClose1, open1, handleOpen2
   
   return (
     <div>
-      <Button onClick={handleOpen2}>Signup</Button>
+      <Button onClick={handleOpen2} style={{color: "black", fontSize: "13px"}}>Signup</Button>
       {open1 && (<><Modal
         open={open1}
         onClose={handleClose1}

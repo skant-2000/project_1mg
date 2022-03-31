@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import styles from "./navbar.module.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -7,8 +7,11 @@ import SearchIcon from "@mui/icons-material/Search";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Login from "../compoLogin/Login";
 import Signup from "../compoLogin/signup";
+import { AuthContext } from "../../contextAPI/AuthContext";
 
 export const Navbar = () => {
+const {auth, setAuth} = useContext(AuthContext)
+console.log(auth);
 	return (
 		<div style={{backgroundColor: "white"}}>
 			<section>
@@ -75,12 +78,12 @@ export const Navbar = () => {
 								SAVE MORE
 							</div>
 						</div>
-						<div>
+						{!auth ? <div style={{display: "flex"}}>
 							{/* <button>Login |</button> */}
 							<Login />
 							<Signup />
 							{/* <button>Sign Up</button> */}
-						</div>
+						</div>: <button onClick={() =>setAuth(!auth)}>Logout</button>}
 						<div>
 							<button>Offers</button>
 						</div>
