@@ -6,11 +6,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import {AddressContextProvider} from "./contextAPI/AddressContext"
+import {AuthContextProvider} from './contextAPI/AuthContext';
 ReactDOM.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<AddressContextProvider>
-				<App />
+				<AuthContextProvider>
+					<App />
+				</AuthContextProvider>
 			</AddressContextProvider>
 		</BrowserRouter>
 	</React.StrictMode>,
