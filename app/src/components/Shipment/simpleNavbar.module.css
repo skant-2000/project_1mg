@@ -1,0 +1,15 @@
+.forbg {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+}
+
+.img {
+    width: 100px;
+}

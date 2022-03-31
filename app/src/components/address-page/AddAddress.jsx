@@ -1,55 +1,66 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "./addAddress.module.css";
 import { useNavigate } from "react-router-dom";
-import {v4 as uuid} from "uuid"
+import { v4 as uuid } from "uuid";
+import { AddressContext } from "../../contextAPI/AddressContext";
 export const AddAddress = () => {
-	const navigate = useNavigate();
-	const [addtype, setAddtype] = useState("");
+	const {
+		addtype,
+		setAddtype,
+		save,
+		setSave,
+		handleData,
+		handleSave,
+		data,
+		handleCancel,
+	} = useContext(AddressContext);
+	// const navigate = useNavigate();
+	// const [addtype, setAddtype] = useState("");
 
-	const [save, setSave] = useState([]);
+	// const [save, setSave] = useState([]);
 
-	const [data, setData] = useState({});
+	// const [data, setData] = useState({});
 
-	const handleData = (e) => {
-		const { name, value } = e.currentTarget;
+	// const handleData = (e) => {
+	// 	const { name, value } = e.currentTarget;
 
-		setData({
-			...data,
-			id: uuid(),
-			[name]: value,
-		});
-	};
-	const handleCancel = () => {
-		const isValue = JSON.parse(localStorage.getItem("cart"));
-		if (isValue.length !== 0) {
-			navigate("/cart/address-page/page");
-		}
-	};
+	// 	setData({
+	// 		...data,
+	// 		id: uuid(),
+	// 		[name]: value,
+	// 	});
+	// };
+	// const handleCancel = () => {
+	// 	const isValue = JSON.parse(localStorage.getItem("cart"));
+	// 	if (isValue.length !== 0) {
+	// 		navigate("/cart/address-page/page");
+	// 	}
+	// };
 
-	const handleSave = () => {
-		//const check = JSON.parse(localStorage.getItem("save"));
-		// save.push(data);
-		// console.log(save);
-		// setSave([...check,data]);
-		// setSave([ ...save , data]);
-		// setSave([...save, data]);
-		var cart = JSON.parse(localStorage.getItem("cart"));
+	// const handleSave = () => {
+	// 	//const check = JSON.parse(localStorage.getItem("save"));
+	// 	// save.push(data);
+	// 	// console.log(save);
+	// 	// setSave([...check,data]);
+	// 	// setSave([ ...save , data]);
+	// 	// setSave([...save, data]);
+	// 	var cart = JSON.parse(localStorage.getItem("cart"));
 
-		if (cart === null) {
-			cart = [];
-			localStorage.setItem("cart", JSON.stringify(cart));
-		}
+	// 	if (cart === null) {
+	// 		cart = [];
+	// 		localStorage.setItem("cart", JSON.stringify(cart));
+	// 	}
 
-		cart.push(data);
-		localStorage.setItem("cart", JSON.stringify(cart));
-		// let save = [];
-		// localStorage.setItem("data", JSON.stringify(data));
-		// localStorage.setItem("save", JSON.stringify(save.push(JSON.stringify(data))));
+	// 	cart.push(data);
+	// 	localStorage.setItem("cart", JSON.stringify(cart));
+	// 	// let save = [];
+	// 	// localStorage.setItem("data", JSON.stringify(data));
+	// 	// localStorage.setItem("save", JSON.stringify(save.push(JSON.stringify(data))));
 
-		navigate("/cart/address-page/page");
-	};
+	// 	navigate("/cart/address-page/page");
+	// };
 
-	console.log(addtype);
+	//console.log(addtype);
 
 	return (
 		<div id={styles.bosy}>

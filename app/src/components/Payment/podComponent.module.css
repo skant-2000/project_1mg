@@ -1,0 +1,14 @@
+.podMain {
+    border: 1.5px solid #ff6f61;
+    padding: 20px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
