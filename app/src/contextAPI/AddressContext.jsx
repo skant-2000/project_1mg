@@ -46,7 +46,7 @@ export const AddressContextProvider = ({ children }) => {
 		// let save = [];
 		// localStorage.setItem("data", JSON.stringify(data));
 		// localStorage.setItem("save", JSON.stringify(save.push(JSON.stringify(data))));
-
+		setData({})
 		navigate("/cart/address-page/page");
 	};
 

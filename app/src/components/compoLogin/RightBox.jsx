@@ -5,7 +5,7 @@ import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 import { rightBox, textField, btn } from "./styles"
 import { alpha, styled } from '@mui/material/styles';
-import { AuthContext } from '../Context/AuthContext';
+import { AuthContext } from '../../contextAPI/AuthContext';
 
 const CssTextField = styled(TextField)({
     '& label.Mui-focused': {
