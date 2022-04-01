@@ -56,7 +56,7 @@ app.delete("/cart/:id", async(req, res) => {
     res.status(200).json(data);
 })
 
-app.listen(process.env.PORT || 8000, async () => {
+app.listen(process.env.PORT || PORT, async () => {
     try {
         await connect()
         console.log(`listening on Port ${PORT}`);

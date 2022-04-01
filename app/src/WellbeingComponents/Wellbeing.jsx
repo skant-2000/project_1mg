@@ -171,8 +171,8 @@ export const Wellbeing = () => {
 
   useEffect(async () => {
     let data = await axios.get(
-      "http://localhost:8000/products"
-    );
+		"https://nodejsbackendtatamg.herokuapp.com/products"
+	);
 
     data = data.data;
     setItems(data); 

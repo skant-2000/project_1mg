@@ -24,7 +24,10 @@ export const Card = ({item}) => {
 
         const obj = {...item, numberOfItems: 1};
         console.log(obj);
-        const post = await axios.post("http://localhost:8000/cart", obj);
+        const post = await axios.post(
+			"https://nodejsbackendtatamg.herokuapp.com/cart",
+			obj
+		);
         console.log("Post to cart", post);
     }
     
