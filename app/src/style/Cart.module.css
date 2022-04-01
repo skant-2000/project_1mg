@@ -1,5 +1,4 @@
 .cart {
-    /* border: 1px solid red; */
     width: 80%;
     margin: auto;
     display: grid;
@@ -13,7 +12,6 @@
     text-align: left;
     padding: 20px 7px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-
 }
 
 .cart > div:nth-child(1) > p {
@@ -61,4 +59,124 @@
     margin: 5px 0 8px;
     font-size: 11px;
     color: grey;
+}
+
+.count {
+    display: flex;
+    flex-direction: row;
+}
+
+.count > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+}
+
+.count > div:nth-child(2) {
+    text-align: right;
+}
+
+.member {
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px 20px 10px;
+}
+
+.member > img {
+    height: 20px;
+}
+
+.member > p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+    color: green;
+    margin: 5px 0;
+}
+
+.member > p:nth-child(3) {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.member > p:nth-child(4) {
+    font-size: 11px;
+    margin: 5px 0 13px;
+}
+
+.member > div:nth-child(5) {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+}
+
+.member > div:nth-child(5) > button {
+    height: 30px;
+    border: 1px solid rgb(255, 111, 97);
+    border-radius: 5px;
+}
+
+.member > div:nth-child(5) > button:nth-child(1) {
+    color: rgb(255, 111, 97);
+    background-color: white;
+}
+
+.member > div:nth-child(5) > button:nth-child(2) {
+    color: white;
+    background-color: rgb(255, 111, 97);
+}
+
+.member > div:nth-child(6) {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid black;
+}
+
+.member > div:nth-child(6) > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+}
+
+.member > div:nth-child(6) > div:nth-child(1) > img {
+    height: 25px;
+    margin: 0 0 0 10px;
+}
+
+.member > div:nth-child(6) > div:nth-child(1) > p {
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.member > div:nth-child(6) > div:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: rgb(219, 219, 219);
+}
+
+.member > div:nth-child(6) > div:nth-child(2) > img {
+    height: 100%;
+}
+
+.bill > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bill > div >:nth-child(1) {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.bill > div > div > p {
+    margin: 10px 0;
+}
+
+.bill > div >:nth-child(2) {
+    padding-right: 20px;
+    text-align: right;
 }
