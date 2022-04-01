@@ -16,10 +16,10 @@ const checkupsModel = require("./checkups.schema")
 // const port = process.env.PORT || 8002
 
 
-const DB_URL = "mongodb+srv://masai:masaischool@cluster0.g0t1d.mongodb.net/tata1mg?retryWrites=true&w=majority"
+// const DB_URL = "mongodb+srv://masai:masaischool@cluster0.g0t1d.mongodb.net/tata1mg?retryWrites=true&w=majority"
 
 const connect = () => {
-    return mongoose.connect(DB_URL)
+    return mongoose.connect(process.env.MONGODB_URL);
 }
 
 
@@ -56,7 +56,7 @@ app.delete("/cart/:id", async(req, res) => {
     res.status(200).json(data);
 })
 
-app.listen(PORT, async () => {
+app.listen(process.env.PORT || 8000, async () => {
     try {
         await connect()
         console.log(`listening on Port ${PORT}`);
