@@ -22,3 +22,12 @@
     font-weight: 600;
     text-align: center;
 }
+
+@media (max-width: 650px) {
+    .certifiedMain {
+        padding: 0 30px;
+    }
+    .certifiedISOPara {
+        font-size: 13px;
+    }
+}

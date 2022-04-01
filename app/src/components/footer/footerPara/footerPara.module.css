@@ -25,3 +25,18 @@
     padding-bottom: 20px;
 
 }
+
+@media (max-width: 650px) {
+    .stayHealthyText {
+        font-size: 15px;
+    }
+
+    .bringCareText {
+        font-size: 13px;
+    }
+
+    .tataPara {
+        font-size: 13px;
+        line-height: 17px;
+    }
+}

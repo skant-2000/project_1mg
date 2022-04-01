@@ -5,6 +5,7 @@
 }
 .footerMainMain {
 	display: flex;
+	flex-direction: column;
 	padding-bottom: 30px;
 	width: 90%;
 	margin: auto;
@@ -16,11 +17,15 @@
 .footerFlex {
 	display: flex;
 	gap: 10px;
-	width: 80%;
+	width: 100%;
 	margin: auto;
 
 	justify-content: space-between;
 	padding-top: 50px;
+}
+
+.footerFlex > div {
+	min-width: 20%;
 }
 
 .knowUs {
@@ -42,6 +47,7 @@
 	display: flex;
 	gap: 4%;
 	margin-bottom: 5px;
+	cursor: pointer;
 }
 .footerLogo {
 	height: 26px;
@@ -57,12 +63,18 @@
 	border: none;
 	vertical-align: middle;
 	color: #fff;
+	cursor: pointer;
 }
 
 .downloadAppMain {
-	margin-top: 30px;
+	margin: auto;
 	font-size: 14px;
 	font-weight: 600;
+	text-align: center;
+}
+
+.downloadAppMain > div:nth-child(2), .downloadAppMain > div:nth-child(3) {
+	cursor: pointer;
 }
 
 .footergoogleLink {
@@ -75,4 +87,38 @@
 .footerappleLink {
 	height: 40px;
 	width: 130px;
+}
+
+.list > div {
+	cursor: pointer;
+}
+
+.list > div:hover {
+	color: grey;
+}
+
+
+@media (max-width: 650px) {
+	.footerMainMain {
+		flex-direction: column;
+	}
+
+	.footerMainMain > div:nth-child(1) {
+		width: 100%;
+	}
+
+	.footerFlex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.downloadAppMain {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin: auto;
+		justify-content: center;
+		text-align: center;
+	}
 }

@@ -2,11 +2,12 @@
     background: #fffcf8;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #eaeaea;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .endMain {
     display: flex;
+    flex-direction: column-reverse;
 	justify-content: space-between;
 	width: 95%;
 	margin: auto;
@@ -14,6 +15,8 @@
 }
 .endPara {
     text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
     color: rgb(129, 123, 123);
     font-weight: 600;
 }
@@ -25,7 +28,8 @@
 }
 
 .imgGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 30px;
+    margin: auto;
 }
