@@ -37,3 +37,15 @@
     color: rgb(128, 125, 125);
     padding-bottom: 20px;
 }
+
+@media (max-width: 650px) {
+	.knowMoreText {
+		font-size: 13px;
+	}
+	.accessText {
+		font-size: 14px;
+	}
+	.tataPara {
+		font-size: 13px;
+	}
+}

@@ -1,30 +1,39 @@
 .forBoxShadow {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px 0px, rgba(0, 0, 0, 0.06) 0px 1px 0px 0px;
     background: #fff;
     width: 90%;
     margin: auto;
-    padding-bottom: 10px;
+    padding-top: 10px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .indialargest {
-    font-size: 22px;
+    font-size: 15px;
     text-align: center;
     letter-spacing: 1px;
     font-weight: normal;
+    color: grey;
 }
 
 .visitorsMain {
     display: flex;
-    width: 60%;
+    width: 80%;
     margin: auto;
     justify-content: space-between;
     margin-top: 30px;
     text-align: center;
 }
 
+.visitorsMain > div {
+    width: 30%;
+}
+
+.visitorsMain > div > div:nth-child(2) {
+    font-size: 13px;
+}
+
 .numbers {
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
     letter-spacing: 1px;
