@@ -9,12 +9,13 @@ import Login from "../compoLogin/Login";
 import Signup from "../compoLogin/signup";
 import { AuthContext } from "../../contextAPI/AuthContext";
 import {useNavigate} from "react-router-dom"
-export const Navbar = () => {
+export const Navbar = ({number}) => {
 	const { auth, setAuth } = useContext(AuthContext);
 	const navigate = useNavigate()
 	const handleNavToCart = () => {
 		navigate("/cart")
 	}
+	console.log("Number in navbar : ", number);
 console.log(auth);
 	return (
 		<div style={{backgroundColor: "white"}}>
@@ -92,8 +93,14 @@ console.log(auth);
 							<button>Offers</button>
 						</div>
 						<div>
-							<button onClick={handleNavToCart}>
+							<button className={styles.shop} onClick={handleNavToCart}>
 								<ShoppingCartOutlinedIcon />
+								{
+
+								number > 0 && <span className={styles.numItems}>{number}</span>
+								}
+								{/* <span className={styles.numItems}>0</span> */}
+								
 							</button>
 						</div>
 						<div>
