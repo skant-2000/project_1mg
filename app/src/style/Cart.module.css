@@ -162,6 +162,11 @@
     height: 100%;
 }
 
+.bill {
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 .bill > div {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -174,9 +179,32 @@
 
 .bill > div > div > p {
     margin: 10px 0;
+    font-size: 12px;
 }
 
 .bill > div >:nth-child(2) {
     padding-right: 20px;
     text-align: right;
+}
+
+.bill > div:nth-child(2) {
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.bill > div:nth-child(3) {
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.bill > div:nth-child(4) > div > p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.bill > div:nth-child(5) {
+    background-color: rgb(228, 246, 231);
+}
+
+.bill > div:nth-child(5) > div:nth-child(2) {
+    color: rgb(26, 171, 42);
+    font-weight: 500;
 }
