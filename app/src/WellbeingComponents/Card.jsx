@@ -22,7 +22,7 @@ export const Card = ({item}) => {
           setADD("ADD");
         }, 2000)
 
-        const post = await axios.post("http://localhost:8000/cart", {...item, numberOfItems: 1});
+        const post = await axios.post("http://localhost:8001/cart", {...item, numberOfItems: 1});
         console.log(post);
     }
     

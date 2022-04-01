@@ -34,7 +34,9 @@ export const Payment = () => {
 		alert("Payment Sucessfully!");
 		navigate("/");
 	}
-
+	let totalSp = JSON.parse(localStorage.getItem("totalSp"));
+	let totalMrp = JSON.parse(localStorage.getItem("totalMrp"));
+	let discount = JSON.parse(localStorage.getItem("discount"));
 	return (
 		<div style={{ backgroundColor: "#f4f4f4", height: "fit-content" }}>
 			<AddressNavbar />
@@ -204,11 +206,11 @@ export const Payment = () => {
 								<div className={styles.forGapHeight}>
 									Item Total(MRP)
 								</div>
-								<div>₹0</div>
+								<div>₹{totalMrp}</div>
 							</div>
 							<div className={styles.forflex}>
 								<div>Price Discount</div>
-								<div>-₹243</div>
+								<div>-₹{discount}</div>
 							</div>
 
 							<div className={styles.line}></div>
@@ -217,7 +219,7 @@ export const Payment = () => {
 								<div className={styles.forGapHeight}>
 									Shipping Fee
 								</div>
-								<div>₹45</div>
+								<div>₹0</div>
 							</div>
 
 							<div>
@@ -243,7 +245,7 @@ export const Payment = () => {
 										color: "rgb(87, 83, 83)",
 									}}
 								>
-									₹0
+									₹{totalSp}
 								</div>
 							</div>
 						</div>
@@ -251,11 +253,14 @@ export const Payment = () => {
 							<div className={styles.totalsaving}>
 								Total Savings
 							</div>
-							<div className={styles.total}>₹243</div>
+							<div className={styles.total}>₹{ discount }</div>
 						</div>
 					</div>
 					<div>
-						<button onClick={handleverifypayment} className={styles.verigyAndPaybtn}>
+						<button
+							onClick={handleverifypayment}
+							className={styles.verigyAndPaybtn}
+						>
 							MAKE PAYMENT
 						</button>
 					</div>

@@ -175,7 +175,7 @@ export const Wellbeing = () => {
     );
 
     data = data.data;
-    setItems(data);
+    setItems(data); 
   }, [filter]);
 
   const handleCreateNewItem = (e) => {

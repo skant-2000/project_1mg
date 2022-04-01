@@ -87,7 +87,7 @@ console.log(auth);
 							<Login />
 							<Signup />
 							{/* <button>Sign Up</button> */}
-						</div>: <button onClick={() =>setAuth(!auth)}>Logout</button>}
+						</div>: <button onClick={() =>setAuth(!auth)} style={{backgroundColor:"transparent", border: "none"}}>Logout</button>}
 						<div>
 							<button>Offers</button>
 						</div>
