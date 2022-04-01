@@ -2,8 +2,10 @@ const express = require("express")
 const mongoose = require("mongoose")
 const cors = require('cors')
 const PORT = 8000
-let app = express()
-app.use(cors())
+let app = express();
+app.use(cors());
+app.use(express.json());
+
 
 const DB_URL = "mongodb+srv://masai:masaischool@cluster0.g0t1d.mongodb.net/tata1mg?retryWrites=true&w=majority"
 
@@ -33,6 +35,18 @@ app.get("/cart", async(req, res) => {
     let data = await cartModel.find({})
     res.status(200)
     res.json(data)
+})
+
+app.post('/cart', async (req, res) => {
+    console.log(req.body);
+    const data = await cartModel.create(req.body);
+    res.status(200).json(data);
+});
+
+app.delete("/cart/:id", async(req, res) => {
+    const id = req.params.id;
+    let data = await cartModel.findByIdAndDelete(id);
+    res.status(200).json(data);
 })
 
 app.listen(PORT, async () => {

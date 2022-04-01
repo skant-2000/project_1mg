@@ -20,10 +20,12 @@ export const Card = ({item}) => {
 
         await setTimeout(() => {
           setADD("ADD");
-        }, 2000)
+        }, 2000);
 
-        const post = await axios.post("http://localhost:8001/cart", {...item, numberOfItems: 1});
-        console.log(post);
+        const obj = {...item, numberOfItems: 1};
+        console.log(obj);
+        const post = await axios.post("http://localhost:8000/cart", obj);
+        console.log("Post to cart", post);
     }
     
 

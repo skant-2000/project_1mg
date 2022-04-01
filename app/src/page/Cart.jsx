@@ -68,7 +68,7 @@ export default function Cart() {
 
   const handleDelete = async (id) => {
     console.log(id);
-    const data = await axios.delete(`http://localhost:8001/cart/${id}`);
+    const data = await axios.delete(`http://localhost:8000/cart/${id}`);
     console.log(data);
     window.location.reload(false); 
   }
