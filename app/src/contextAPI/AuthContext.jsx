@@ -31,7 +31,7 @@ export const AuthContextProvider = ({children}) => {
     let data = { 
       "number": register, 
     }
-   axios.post("http://localhost:8002/api/user/signup", data).then((res) => {
+   axios.post("http://localhost:8000/api/user/signup", data).then((res) => {
     console.log("res", res)
     setIsRegister(true)
     console.log(res.data.otp)
@@ -48,7 +48,7 @@ export const AuthContextProvider = ({children}) => {
       "otp": signupOtp
     }
     // console.log(JSON.stringify(data))
-   axios.post("http://localhost:8002/api/user/signup/verify", data).then((res) => {
+   axios.post("http://localhost:8000/api/user/signup/verify", data).then((res) => {
     console.log("res", res)
     alert("Otp verified successfully")
     setSignedUp(true)
@@ -66,7 +66,7 @@ export const AuthContextProvider = ({children}) => {
       "otp": loginOtp
     }
     // console.log(JSON.stringify(data))
-   axios.post("http://localhost:8002/api/user/login/verify", data).then((res) => {
+   axios.post("http://localhost:8000/api/user/login/verify", data).then((res) => {
     console.log("res", res)
     alert("Otp verified successfully")
     setIsLogin(true)
@@ -87,7 +87,7 @@ export const AuthContextProvider = ({children}) => {
     let data = { 
       "number": login, 
     }
-   axios.post("http://localhost:8002/api/user/login", data).then((res) => {
+   axios.post("http://localhost:8000/api/user/login", data).then((res) => {
     console.log("res", res)
     setIsLogin(false)
     console.log(res.data.otp)

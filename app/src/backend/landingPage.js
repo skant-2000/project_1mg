@@ -1,3 +1,4 @@
+require("dotenv/config");
 const express = require("express")
 const mongoose = require("mongoose")
 const cors = require('cors')
@@ -5,6 +6,14 @@ const PORT = 8000
 let app = express();
 app.use(cors());
 app.use(express.json());
+const userRouter = require("./Routers/userRouter")
+app.use("/api/user", userRouter)
+
+const productsModel = require("./products.schema")
+const checkupsModel = require("./checkups.schema")
+
+
+// const port = process.env.PORT || 8002
 
 
 const DB_URL = "mongodb+srv://masai:masaischool@cluster0.g0t1d.mongodb.net/tata1mg?retryWrites=true&w=majority"
@@ -13,7 +22,6 @@ const connect = () => {
     return mongoose.connect(DB_URL)
 }
 
-const checkupsModel = require("./checkups.schema")
 
 app.get("/checkups", async(req, res) => {
     let data = await checkupsModel.find({})
@@ -21,7 +29,6 @@ app.get("/checkups", async(req, res) => {
     res.json(data)
 })
 
-const productsModel = require("./products.schema")
 
 app.get("/products", async(req, res) => {
     let data = await productsModel.find({})
