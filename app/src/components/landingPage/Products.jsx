@@ -9,9 +9,9 @@ export default function HealthChcekupCarousel() {
 
   useEffect(() => {
     try {
-      fetch("http://localhost:8000/products")
-        .then((res) => res.json())
-        .then((data) => setData(data));
+      fetch("https://nodejsbackendtatamg.herokuapp.com/products")
+			.then((res) => res.json())
+			.then((data) => setData(data));
     } catch {
       console.log("error");
     }

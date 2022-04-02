@@ -16,9 +16,9 @@ export default function Cart() {
 
   useEffect(() => {
     try {
-      fetch("http://localhost:8000/cart")
-        .then((res) => res.json())
-        .then((data) => setData(data));
+      fetch("https://nodejsbackendtatamg.herokuapp.com/cart")
+			.then((res) => res.json())
+			.then((data) => setData(data));
     } catch {
       console.log("error");
     }
@@ -68,7 +68,9 @@ export default function Cart() {
 
   const handleDelete = async (id) => {
     console.log(id);
-    const data = await axios.delete(`http://localhost:8000/cart/${id}`);
+    const data = await axios.delete(
+		`https://nodejsbackendtatamg.herokuapp.com/cart/${id}`
+	);
     console.log(data);
     window.location.reload(false); 
   }

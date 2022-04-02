@@ -21,14 +21,15 @@ export const Card = ({ item, getNumber}) => {
     }, 2000);
 
     getNumber();
+        const obj = {...item, numberOfItems: 1};
+        console.log(obj);
+        const post = await axios.post(
+			"https://nodejsbackendtatamg.herokuapp.com/cart",
+			obj
+		);
+        console.log("Post to cart", post);
+    }
     
-    const obj = { ...item, numberOfItems: 1 };
-    console.log(obj);
-    const post = await axios.post("http://localhost:8000/cart", obj);
-    console.log("Post to cart", post);
-  };
-
-
 
   return (
     <div className={styles.container}>
