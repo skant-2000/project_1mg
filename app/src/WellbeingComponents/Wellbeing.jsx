@@ -14,6 +14,7 @@ import OptionUnstyled, {
 } from "@mui/base/OptionUnstyled";
 import PopperUnstyled from "@mui/base/PopperUnstyled";
 import { styled } from "@mui/system";
+import { SimpleNavbar } from "../components/Shipment/SimpleNavbar";
 
 const blue = {
   100: "#DAECFF",
@@ -173,7 +174,7 @@ export const Wellbeing = () => {
     );
     data = data.data;
     console.log("Number : ", data.length);
-    setNumber(data.length);
+    setNumber(state => data.length);
   }
 
   useEffect(async () => {
@@ -194,6 +195,9 @@ export const Wellbeing = () => {
     <div>
       <div className={styles.navbar}>
       <Navbar number={number} />
+      </div>
+      <div className={styles.navbar1}>
+        <SimpleNavbar />
       </div>
     <div className={styles.container}>
       <div className={styles.sidebar}>
