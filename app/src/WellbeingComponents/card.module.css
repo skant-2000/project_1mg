@@ -22,17 +22,19 @@
     height: 165px;
 }
 
-.name {
-    padding-top: 28px;
-    color: rgb(34, 33, 33);
-    font-size: 14px;
-    display: inline;
-    -webkit-line-clamp: 2;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    word-wrap: break-word;  /* Important for long words! */
+@media only screen and (min-width: 600px) {
+    .name {
+        padding-top: 28px;
+        color: rgb(34, 33, 33);
+        font-size: 14px;
+        display: inline;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;  /* Important for long words! */
+    }
 }
 
 .quantity {
@@ -69,4 +71,46 @@
     font-size: 14px;
     font-weight: bold;
     color: #ff6f61;
+}
+
+@media only screen and (max-width: 600px){
+    .container {
+        display: flex;
+        width: 100vw;
+        height: 150px;
+        justify-content: space-between;
+    }
+    .detailContainer {
+        width: 250px;
+    }
+    .image {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        max-width: 115px;
+    }
+    .imageContainer {
+        display: flex;
+        width: 115px;
+        align-items: center;
+        justify-content: center;
+    }
+    .name {
+        padding-top: 0px;
+        font-size: 16px;
+        font-weight: bold;
+        display: inline;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+    }
+    .quantity, .price {
+        font-size: 14px;
+    }
+    
 }

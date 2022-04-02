@@ -14,6 +14,7 @@ import OptionUnstyled, {
 } from "@mui/base/OptionUnstyled";
 import PopperUnstyled from "@mui/base/PopperUnstyled";
 import { styled } from "@mui/system";
+import { SimpleNavbar } from "../components/Shipment/SimpleNavbar";
 
 const blue = {
   100: "#DAECFF",
@@ -159,21 +160,29 @@ export const Wellbeing = () => {
   const [sort, setSort] = useState("Relevance");
   const initFilter = localStorage.getItem("filter");
   const [filter, setFilter] = useState( JSON.parse(initFilter));
-
+  const [number, setNumber] = useState( 0 );
   
   const onClick = () => {
     var f = JSON.parse( localStorage.getItem("filter") );
     var discount = f.includes()
     setFilter(f);
-    console.log(": Filter : = ", filter);
   }
 
+  const getNumber = async () => {
+    let data = await axios.get(
+      "http://localhost:8000/cart"
+    );
+    data = data.data;
+    console.log("Number : ", data.length);
+    setNumber(state => data.length);
+  }
 
   useEffect(async () => {
     let data = await axios.get(
 		"https://nodejsbackendtatamg.herokuapp.com/products"
 	);
 
+    getNumber();
     data = data.data;
     setItems(data); 
   }, [filter]);
@@ -185,7 +194,12 @@ export const Wellbeing = () => {
 
   return (
     <div>
-      <Navbar />
+      <div className={styles.navbar}>
+      <Navbar number={number} />
+      </div>
+      <div className={styles.navbar1}>
+        <SimpleNavbar />
+      </div>
     <div className={styles.container}>
       <div className={styles.sidebar}>
         <Sidebar onClick={onClick}/>
@@ -224,12 +238,15 @@ export const Wellbeing = () => {
           .filter( (item) => ( !filter.includes("Weight Management")  || ( filter.includes("Weight Management") && item.uses.includes("Weight Management") ) ) ? true : false )
           .filter( (item) => ( !filter.includes("Liver Care")  || ( filter.includes("Liver Care") && item.uses.includes("Liver Care") ) ) ? true : false )
           .filter( (item) => ( !filter.includes("Cough & Cold")  || ( filter.includes("Cough & Cold") && item.uses.includes("Cough & Cold") ) ) ? true : false )
-          .map((item) => <Card key={`${item._id}`} item={item}  />)
+          .map((item) => <Card getNumber={getNumber} key={`${item._id}`} item={item}  />)
           }
         </div>
       </div>
     </div>
-    <FooterComponents />
+    <div className={styles.navbar}>
+
+    <FooterComponents  />
+    </div>
     </div>
   );
 };

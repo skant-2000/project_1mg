@@ -8,16 +8,17 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Login from "../compoLogin/Login";
 import Signup from "../compoLogin/signup";
 import { AuthContext } from "../../contextAPI/AuthContext";
-import { useNavigate } from "react-router-dom";
-export const Navbar = () => {
+import {useNavigate} from "react-router-dom"
+export const Navbar = ({number}) => {
 	const { auth, setAuth } = useContext(AuthContext);
-	const navigate = useNavigate();
+	const navigate = useNavigate()
 	const handleNavToCart = () => {
-		navigate("/cart");
-	};
-	console.log(auth);
+		navigate("/cart")
+	}
+	console.log("Number in navbar : ", number);
+console.log(auth);
 	return (
-		<div style={{ backgroundColor: "white" }}>
+		<div style={{backgroundColor: "white"}}>
 			<section>
 				<div className={styles.forBoxShadow}>
 					<div className={styles.navbar1Root}>
@@ -31,10 +32,14 @@ export const Navbar = () => {
 							</button>
 						</div>
 						<div>
-							<button className={styles.medicine}>MEDICINES</button>
+							<button className={styles.medicine}>
+								MEDICINES
+							</button>
 						</div>
 						<div className={styles.labTestFlex}>
-							<button className={styles.labtests}>LAB TESTS</button>
+							<button className={styles.labtests}>
+								LAB TESTS
+							</button>
 							<div
 								style={{
 									backgroundColor: "#ff6f61",
@@ -48,16 +53,24 @@ export const Navbar = () => {
 							</div>
 						</div>
 						<div>
-							<button className={styles.askDoctor}>ASK DOCTOR</button>
+							<button className={styles.askDoctor}>
+								ASK DOCTOR
+							</button>
 						</div>
 						<div>
-							<button className={styles.askDoctor}>COVID-19</button>
+							<button className={styles.askDoctor}>
+								COVID-19
+							</button>
 						</div>
 						<div>
-							<button className={styles.askDoctor}>AYURVEDA</button>
+							<button className={styles.askDoctor}>
+								AYURVEDA
+							</button>
 						</div>
 						<div className={styles.labTestFlex}>
-							<button className={styles.labtests}>CARE PLAN</button>
+							<button className={styles.labtests}>
+								CARE PLAN
+							</button>
 							<div
 								style={{
 									backgroundColor: "#ff6f61",
@@ -70,27 +83,24 @@ export const Navbar = () => {
 								SAVE MORE
 							</div>
 						</div>
-						{!auth ? (
-							<div style={{ display: "flex" }}>
-								{/* <button>Login |</button> */}
-								<Login />
-								<Signup />
-								{/* <button>Sign Up</button> */}
-							</div>
-						) : (
-							<button
-								onClick={() => setAuth(!auth)}
-								style={{ backgroundColor: "transparent", border: "none" }}
-							>
-								Logout
-							</button>
-						)}
+						{!auth ? <div style={{display: "flex"}}>
+							{/* <button>Login |</button> */}
+							<Login />
+							<Signup />
+							{/* <button>Sign Up</button> */}
+						</div>: <button onClick={() =>setAuth(!auth)} style={{backgroundColor:"transparent", border: "none"}}>Logout</button>}
 						<div>
 							<button>Offers</button>
 						</div>
 						<div>
-							<button onClick={handleNavToCart}>
+							<button className={styles.shop} onClick={handleNavToCart}>
 								<ShoppingCartOutlinedIcon />
+								{
+
+								number > 0 && <span className={styles.numItems}>{number}</span>
+								}
+								{/* <span className={styles.numItems}>0</span> */}
+								
 							</button>
 						</div>
 						<div>
@@ -163,7 +173,9 @@ export const Navbar = () => {
 						}}
 					>
 						<div>
-							<div className={styles.quickBuy}>QUICK BUY! Flat 25% off</div>
+							<div className={styles.quickBuy}>
+								QUICK BUY! Flat 25% off
+							</div>
 							<div className={styles.quickBuy}>on medicines*</div>
 						</div>
 						<div>
@@ -177,7 +189,9 @@ export const Navbar = () => {
 				<div className={styles.navbar3Root}>
 					<div>
 						<div className={styles.arrowAndText}>
-							<div className={styles.healthText}>Health Resource Center</div>
+							<div className={styles.healthText}>
+								Health Resource Center
+							</div>
 							<KeyboardArrowDownIcon
 								className={styles.healthText}
 								sx={{ fontSize: "20px" }}
@@ -185,7 +199,9 @@ export const Navbar = () => {
 						</div>
 					</div>
 					<div className={styles.arrowAndText}>
-						<div className={styles.healthText}>Covid Essentials</div>
+						<div className={styles.healthText}>
+							Covid Essentials
+						</div>
 						<KeyboardArrowDownIcon
 							className={styles.healthText}
 							sx={{ fontSize: "20px" }}
@@ -199,7 +215,9 @@ export const Navbar = () => {
 						/>
 					</div>
 					<div className={styles.arrowAndText}>
-						<div className={styles.healthText}>Vitamins & Nutrition</div>
+						<div className={styles.healthText}>
+							Vitamins & Nutrition
+						</div>
 						<KeyboardArrowDownIcon
 							className={styles.healthText}
 							sx={{ fontSize: "20px" }}
@@ -213,7 +231,9 @@ export const Navbar = () => {
 						/>
 					</div>
 					<div className={styles.arrowAndText}>
-						<div className={styles.healthText}>Healthcare Devices</div>
+						<div className={styles.healthText}>
+							Healthcare Devices
+						</div>
 						<KeyboardArrowDownIcon
 							className={styles.healthText}
 							sx={{ fontSize: "20px" }}
@@ -227,15 +247,21 @@ export const Navbar = () => {
 						/>
 					</div>
 					<div className={styles.arrowAndText}>
-						<div className={styles.healthText}>Health Conditions</div>
+						<div className={styles.healthText}>
+							Health Conditions
+						</div>
 						<KeyboardArrowDownIcon
 							className={styles.healthText}
 							sx={{ fontSize: "20px" }}
 						/>
 					</div>
-					{/* <div className={styles.navbar3Root}> */}
+				</div>
+
+				<div className={styles.navbar3Root}>
 					<div className={styles.arrowAndText}>
-						<div className={styles.healthText}>Ayurveda Products</div>
+						<div className={styles.healthText}>
+							Ayurveda Products
+						</div>
 						<KeyboardArrowDownIcon
 							className={styles.healthText}
 							sx={{ fontSize: "20px" }}
@@ -248,7 +274,6 @@ export const Navbar = () => {
 							sx={{ fontSize: "20px" }}
 						/>
 					</div>
-					{/* </div> */}
 				</div>
 			</section>
 		</div>
