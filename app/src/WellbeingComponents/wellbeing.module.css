@@ -4,6 +4,10 @@
     padding-top: 20px;
 }
 
+.navbar1 {
+    display: none;
+}
+
 .sidebar {
     width: 190px;
     padding: 15px;
@@ -24,4 +28,16 @@
 
 .select {
     text-align: right;
+}
+
+@media only screen and (max-width: 600px){
+	.navbar {
+        display: none;
+    }
+	.navbar1 {
+        display: block;
+    }
+    .sidebar {
+        padding: 0px;
+    }
 }
